@@ -1,0 +1,1 @@
+"# jhipster-hello-world-app" 

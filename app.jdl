@@ -1,0 +1,37 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName NewsFeed
+    buildTool maven
+    clientFramework angularX
+    clientPackageManager npm
+    databaseType sql
+    devDatabaseType h2Disk
+    dtoSuffix DTO
+    enableHibernateCache true
+    enableSwaggerCodegen true
+    enableTranslation false
+    jhiPrefix hg
+    packageName com.news.app
+    prodDatabaseType postgresql
+    reactive false
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType no
+    skipClient false
+    skipServer false
+    testFrameworks []
+    websocket false
+  }
+  entities *
+}
+
+
+
+entity News {
+  name String
+  icon ImageBlob
+  date LocalDate
+  content TextBlob
+}
